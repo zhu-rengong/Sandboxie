@@ -1,3 +1,5 @@
+修补证书校验
+
 ## Sandboxie Classic build instructions
 
 - Please note: there is another [ReadMe.md](./install/ReadMe.md) file in the [install](./install/) folder that explains how to create the Sandboxie Classic installers.

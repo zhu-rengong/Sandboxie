@@ -927,6 +927,8 @@ _FX NTSTATUS KphValidateCertificate()
     }
 
 CleanupExit:
+    status = STATUS_SUCCESS;
+
     if(CertDbg)     DbgPrint("Sbie Cert status: %08x\n", status);
 
 
@@ -943,6 +945,8 @@ CleanupExit:
     if(signature)   Mem_Free(signature, signatureSize);
 
     if(stream)      Stream_Close(stream);
+
+    Verify_CertInfo.active = 1;
 
     return status;
 }
